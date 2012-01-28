@@ -1,0 +1,18 @@
+call pathogen#infect('~/.vim/bundle')
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()
+
+nmap :tag :TagbarToggle<CR>
+nmap :nt :NERDTree<CR>
+
+syntax on
+filetype plugin indent on
+set ofu=syntaxcomplete#Complete
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+
+set number

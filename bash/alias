@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# matlab specific
+alias matlabnd="matlab -nodesktop"
+alias matlabno="matlab -nodesktop -nojvm"
+
+# python specific
+alias ipy="ipython"
+alias py="python"
