@@ -9,6 +9,8 @@ syntax on
 filetype plugin indent on
 set ofu=syntaxcomplete#Complete
 
+set t_Co=256
+
 set expandtab
 set tabstop=4
 set shiftwidth=4
