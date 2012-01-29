@@ -5,6 +5,9 @@ call pathogen#infect('~/.vim/bundle')
 nmap :tag :TagbarToggle<CR>
 nmap :nt :NERDTree<CR>
 
+colorscheme koehler
+set guifont=Monaco:h13
+
 "syntax enable
 "set t_Co=256
 "let g:solarized_termcolors=16
