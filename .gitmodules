@@ -19,3 +19,6 @@
 [submodule "vim/bundle/VimOrganizer"]
 	path = vim/bundle/VimOrganizer
 	url = https://github.com/hsitz/VimOrganizer.git
+[submodule "bim/bundle/calendar"]
+	path = vim/bundle/calendar
+	url = https://github.com/mattn/calendar-vim.git
