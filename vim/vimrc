@@ -2,9 +2,10 @@ call pathogen#infect('~/.vim/bundle')
 "call pathogen#runtime_append_all_bundles()
 "call pathogen#helptags()
 
-nmap :tag :TagbarToggle<CR>
+nmap :tb :TagbarToggle<CR>
 nmap :nt :NERDTreeToggle<CR>
 nmap :res :bo cw<CR>
+map <F9> :bo cw<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
 
 let g:NERDTreeDirArrows=0
 
