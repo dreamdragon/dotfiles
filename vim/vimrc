@@ -4,6 +4,7 @@ call pathogen#infect('~/.vim/bundle')
 
 nmap :tag :TagbarToggle<CR>
 nmap :nt :NERDTreeToggle<CR>
+nmap :res :bo cw<CR>
 
 let g:NERDTreeDirArrows=0
 
