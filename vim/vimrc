@@ -1,6 +1,9 @@
+"""""""plugins""""""""
 call pathogen#infect('~/.vim/bundle')
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
+
+syntax on
+filetype plugin indent on
+set ofu=syntaxcomplete#Complete
 
 nmap :tb :TagbarToggle<CR>
 nmap :nt :NERDTreeToggle<CR>
@@ -9,25 +12,19 @@ map <F9> :bo new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
 
 let g:NERDTreeDirArrows=0
 
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+au BufEnter *.org call org#SetOrgFileType()
+
+""""""color"""""""""""
 colorscheme koehler
-"set guifont=Monaco:h13
+set guifont=Monaco:h13
 
-"syntax enable
-"set t_Co=256
-"let g:solarized_termcolors=16
-"set background=dark
-"colorscheme solarized
-
-syntax on
-filetype plugin indent on
-set ofu=syntaxcomplete#Complete
-
-"set t_Co=256
-
+"""""editting"""""""""
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set autoindent
-
 set number
+
+let g:Tex_ViewRule_pdf = 'Preview'
