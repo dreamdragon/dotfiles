@@ -14,4 +14,3 @@ alias bet="ssh -Y menglong@bet.seas.upenn.edu"
 alias bbot="ssh -Y arm@bbot"
 alias vostro="ssh -Y menglong@lvn403-2.grasp.upenn.edu"
 
-
