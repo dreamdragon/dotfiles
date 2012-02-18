@@ -8,9 +8,3 @@ alias matlabno="matlab -nodesktop -nojvm"
 alias ipy="ipython"
 alias py="python"
 
-# general
-alias alef="ssh -Y menglong@alef.seas.upenn.edu"
-alias bet="ssh -Y menglong@bet.seas.upenn.edu"
-alias bbot="ssh -Y arm@bbot"
-alias vostro="ssh -Y menglong@lvn403-2.grasp.upenn.edu"
-
