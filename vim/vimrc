@@ -1,6 +1,7 @@
 """""""plugins""""""""
 call pathogen#infect('~/.vim/bundle')
 
+set nocompatible
 syntax on
 filetype plugin indent on
 set ofu=syntaxcomplete#Complete
@@ -11,6 +12,18 @@ nmap :res :bo cw<CR>
 map <F9> :bo cw<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
 
 let g:NERDTreeDirArrows=0
+
+"""""""""vimwiki"""""""""
+"let wiki = {}
+"let wiki.path = '~/vimwiki/'
+"let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
+"let wiki.template_path = '~/vimwiki/templates'
+
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+            \ 'nested_syntaxes': {'python': 'python', 'c++': 'cpp'},
+            \ 'template_path': '~/vimwiki/templates/',
+            \ 'template_default': 'def_template',
+            \ 'template_ext': '.html'}]
 
 au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org call org#SetOrgFileType()
