@@ -29,7 +29,8 @@ au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org call org#SetOrgFileType()
 
 """"""color"""""""""""
-colorscheme koehler
+"colorscheme koehler
+"colorscheme solarized
 set guifont=Monaco:h13
 
 """""editting"""""""""
